@@ -16,7 +16,8 @@ Como mejora, vamos a incluir Bootstrap para el diseño, y en el centro de la ban
 - Hernández Ortiz Addi - 23200847 
 - Huerta Aguilar José Antonio - 23200848
 - Quezada Quiterio Marcelo - 23200881 
-- Sánchez Ortega Adrián - 23200899 
+- Sánchez Ortega Adrián - 23200899
+
 Entrega: Genera los códigos necesarios para replicar y mejorar el sitio de manera separada: Un archivo para HTML, un archivo para JS y archivo CSS. Y vamos a crear una carpeta para añadir la imagen y jalarla como ruta interna. 
 ¿Me explique? 
 ¿Necesitas algo más para lograr el objetivo?
