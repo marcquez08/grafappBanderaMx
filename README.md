@@ -8,7 +8,7 @@
 - Sánchez Ortega Adrián
 ### Fecha: 11 de Febrero 2026
 ### Prompts Utilizados:
-1. Prompt 1:
+### 1. Prompt 1:
 #### Contexto: Realizar un sitio web para visualizar la bandera de México 
 #### Objetivo: Replicar y mejorar el siguiente sitio 
 #### Tarea: Vamos a replicar el siguiente sitio que tiene a la bandera de México, tiene dos sliders que permiten cambiar los colores del lado verde y rojo, cada slider hace una gama de verde y rojo respectivamente. 
@@ -21,12 +21,12 @@
 ##### ¿Me explique? 
 ##### ¿Necesitas algo más para lograr el objetivo?
 
-2. Prompt 2:
+### 2. Prompt 2:
 ##### Elimina el contenedor del centro que contiene el texto "Unidad (Blanco)" es innecesario y ajusta el espacio para que se muestren los contenedores de los sliders. 
 ##### Centra la información del contenedor de los créditos. 
 ##### Haz el sitio con un toque más moderno y bonito y patriótico.
 
-3. Prompt 3:
+### 3. Prompt 3:
 ##### Hay que hacer estos ajustes para el sitio:
 - El parrafo que dice "Ajusta los sliders" hay que cambiarlo a un color más visible
 - Añade con el mismo estilo de las divisiones, el significado del color blanco en la bandera, que diga: "Unidad (Blanco)"
