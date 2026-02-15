@@ -1,0 +1,161 @@
+:root {
+  --flag-h: 360px;
+  --flag-radius: 22px;
+
+  --mx-green: rgb(0, 122, 61);
+  --mx-red: rgb(178, 34, 52);
+}
+
+body {
+  background: radial-gradient(circle at 20% 10%, #ffffff 0%, #f3f6ff 45%, #f7f7fb 100%);
+}
+
+/* Título patriótico */
+.title-gradient {
+  background: linear-gradient(90deg, #0a7a3d 0%, #111827 40%, #b11226 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Tarjetas */
+.card-patriot {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-patriot::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: linear-gradient(90deg, #0a7a3d 0%, #ffffff 50%, #b11226 100%);
+}
+
+.badge-dark {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.45rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* Botón patriótico */
+.btn-patriot {
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #0a7a3d 0%, #111827 50%, #b11226 100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.btn-patriot:hover {
+  filter: brightness(1.05);
+  color: #ffffff !important; /* texto visible */
+}
+
+/* Botón random */
+
+.btn-random {
+  font-weight: 700; /* negritas, como el otro */
+}
+
+
+/* Bandera: 3 columnas VERTICALES */
+.flag-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.flag-vertical {
+  width: min(1100px, 100%);
+  height: var(--flag-h);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* <-- CLAVE: 3 columnas */
+  grid-template-rows: 1fr;           /* <-- 1 sola fila */
+  border-radius: var(--flag-radius);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Importante: cada franja ocupa 100% del alto */
+.stripe {
+  height: 100%;
+}
+
+.stripe-green {
+  background: var(--mx-green);
+}
+
+.stripe-white {
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+}
+
+.stripe-red {
+  background: var(--mx-red);
+}
+
+/* Escudo centrado */
+.escudo {
+  width: min(55%, 240px);
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.18));
+}
+
+/* Créditos */
+.card-credits {
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.credits-list {
+  display: grid;
+  gap: 0.35rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  :root {
+    --flag-h: 240px;
+  }
+  .escudo {
+    width: min(70%, 170px);
+  }
+}
+
+/* Subtítulo más visible */
+.subtitle-strong {
+  color: #111827; /* más visible que text-secondary */
+  font-weight: 600;
+}
+
+/* Texto “Unidad (Blanco)” con estilo tipo división */
+.white-meaning {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  color: #111827;
+  position: relative;
+  overflow: hidden;
+}
+
+.white-meaning::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: linear-gradient(90deg, #0a7a3d 0%, #ffffff 50%, #b11226 100%);
+}
